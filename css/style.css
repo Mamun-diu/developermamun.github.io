@@ -13,7 +13,7 @@ body{
   top: 0;
   width: 16.666667%;
   height: 100vh;
-  min-height: 650px;
+
   background : #111418;
 }
 .profile img{
@@ -107,6 +107,7 @@ body{
   background : url("../img/slider-img3.jpg");
   background-attachment: fixed;
   height: 100vh;
+  min-height: 500px;
   z-index: -9;
 
   text-align: center;
@@ -531,5 +532,21 @@ ul.project li a:hover{
   }
   .typed{
     font-size : 32px;
+  }
+  .experiance .experiance-child{
+    border-right: none;
+    border-bottom: 1px solid #ddd !important;
+  }
+  .experiance .experiance-child:last-child{
+    border-bottom: none !important;
+  }
+  .client h4{
+    font-size : 16px;
+    margin-left : 15px;
+  }
+  .client h5{
+    font-size: 14px;
+    margin-left : 15px;
+    margin-bottom : 40px;
   }
 }
