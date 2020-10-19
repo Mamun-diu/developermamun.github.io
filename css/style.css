@@ -303,16 +303,11 @@ ul.project li a:hover{
   background: #F8F9FA;
   padding : 40px !important;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: scroll;
+  height : 315px;
+
 }
-.client:nth-child(1){
-  max-width: 49%;
-  margin-right: 1%;
-}
-.client:nth-child(2){
-  max-width: 49%;
-  margin-left: 1%;
-}
+
 .client img{
   width: 70px;
   border-radius: 50%;
@@ -450,6 +445,15 @@ ul.project li a:hover{
   .title h1{
     font-size: 115px;
   }
+  .client h4{
+    font-size : 20px;
+  }
+  .client h5{
+    font-size: 18px;
+  }
+  .client p{
+    font-size : 14px;
+  }
 }
 @media (max-width:991px) {
   .about-me{
@@ -471,16 +475,7 @@ ul.project li a:hover{
   .title h1{
     font-size : 100px;
   }
-  .client:nth-child(1){
-    max-width: 100%;
-    margin-right: 0%;
-    margin-bottom: 10px;
-  }
-  .client:nth-child(2){
-    max-width: 100%;
-    margin-left: 0%;
-    margin-bottom: 10px;
-  }
+
   .name{
     width: 100%;
     margin-right: 0%;
@@ -508,6 +503,15 @@ ul.project li a:hover{
   }
   .typed{
     font-size : 36px;
+  }
+  .client h4{
+    font-size : 26px;
+  }
+  .client h5{
+    font-size: 23px;
+  }
+  .client p{
+    font-size : 18px;
   }
 }
 
@@ -541,12 +545,15 @@ ul.project li a:hover{
     border-bottom: none !important;
   }
   .client h4{
-    font-size : 16px;
-    margin-left : 25px;
+    font-size : 20px;
+
   }
   .client h5{
-    font-size: 14px;
-    margin-left : 25px;
-    margin-bottom : 40px;
+    font-size: 18px;
+
+    margin-bottom : 20px;
+  }
+  .client p{
+    font-size : 16px;
   }
 }
