@@ -448,8 +448,31 @@ li.active a{
   background :#20C997;
   height : 10px;
   border-radius: 5px;
+  -webkit-animation: animates 5s  ease-in-out;
+  -moz-animation:    animates 5s  ease-in-out;
+  -o-animation:      animates 5s  ease-in-out;
+  -ms-transition:    animates 5s  ease-in-out;
   animation-name: animates;
   animation-duration: 5s;
+}
+@-webkit-keyframes animates{
+  from{width : 0px;}
+  to{width : 100%;}
+}
+
+@-moz-keyframes animates{
+  from{width : 0px;}
+  to{width : 100%;}
+}
+
+@-o-keyframes animates {
+  from{width : 0px;}
+  to{width : 100%;}
+}
+
+@-ms-keyframes animates {
+  from{width : 0px;}
+  to{width : 100%;}
 }
 
 @keyframes animates {
