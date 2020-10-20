@@ -479,9 +479,28 @@
   <div id="toTop" data-toggle="tooltip" data-placement="top" title="Back to Top">
     <i class="fas fa-space-shuttle"></i>
   </div>
+  <div class="color d-none d-md-block">
+    <i class="fas fa-cog"></i>
+    <div class="color-box">
+      <h4>Choose Color</h4>
+      <div class="ml-3 mt-2">
+        <span id="indigo"  data-toggle="tooltip" data-placement="top" title="Indigo"></span>
+        <span id="blue"  data-toggle="tooltip" data-placement="top" title="Blue"></span>
+        <span id="purple"  data-toggle="tooltip" data-placement="top" title="Purple"></span>
+        <span id="cyan"  data-toggle="tooltip" data-placement="top" title="Cyan"></span>
+        <span id="red"  data-toggle="tooltip" data-placement="top" title="Red"></span>
+        <span id="pink"  data-toggle="tooltip" data-placement="top" title="Pink"></span>
+        <span id="green"  data-toggle="tooltip" data-placement="top" title="Green"></span>
+        <span id="yellow"  data-toggle="tooltip" data-placement="top" title="Yellow"></span>
+        <span id="orange"  data-toggle="tooltip" data-placement="top" title="Orange"></span>
+        <span id="brown"  data-toggle="tooltip" data-placement="top" title="Brown"></span>
+      </div>
+    </div>
+  </div>
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+
     <script src="js/wow.min.js" charset="utf-8"></script>
     <script src="js/popper.min.js" charset="utf-8"></script>
     <script src="js/slim.min.js" charset="utf-8"></script>
@@ -495,7 +514,7 @@
 
 
     <!-- Counter -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" charset="utf-8"></script>
+    <script src="js/jquery.waypoints.js" charset="utf-8"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -578,7 +597,124 @@
 
        // Tool Tips
        $('[data-toggle="tooltip"]').tooltip();
+
+
+
+       //color selector
+       var count = 0;
+       $(".color").click(function(){
+
+         if(count==0){
+           $(".color").animate({right : "200px"},1000);
+           $(".color-box").animate({left: "40px"},1000);
+           count = 1;
+         }else{
+           $(".color").animate({right : "0px"},1000);
+           $(".color-box").animate({left: "240px"},1000);
+           count = 0;
+         }
+       });
+       function myColor(color) {
+         $(".welcome a").css({"color" : color+"","border" : "2px solid "+color,"font-weight":"bold"});
+         $(".welcome a").mouseover(function(){
+           $(this).css({"color" : "#fff","background":color+"","border":"2px solid "+color});
+         });
+         $(".welcome a").mouseout(function(){
+           $(this).css({"color" : color+"","background":"none","border" : "2px solid "+color});
+         });
+         $(".title span").css({"background":color+""});
+         $(".about-me h2 span").css({"color":color+""});
+         $(".email").css({"color":color+""});
+         $(".web-img").css({"color":color+""});
+         $(".education span").css({"background":color+""});
+         $("ul.project li").mouseover(function(){
+           $(this).css({"border-bottom":"2px solid "+color});
+         });
+         $("ul.project li").mouseout(function(){
+           $(this).css({"border-bottom":"none"});
+         });
+         $("ul.project li a").mouseover(function(){
+           $(this).css({"color":""+color});
+         });
+         $("ul.project li a").mouseout(function(){
+           $(this).css({"color":"#000"});
+         });
+         $(".buttons").css({"background":color+""});
+         $("#nav li a").css({"color":"#eee"});
+         $("#nav li.active a").css({"color":color+""});
+         $(window).scroll(function(){
+           $("#nav li a").css({"color":"#eee"});
+           $("#nav li.active a").css({"color":color+""});
+         });
+
+         $("#nav2 li a").css({"color":"#eee"});
+         $("#nav2 li.active2 a").css({"color":color+""});
+         $(window).scroll(function(){
+           $("#nav2 li a").css({"color":"#eee"});
+           $("#nav2 li.active2 a").css({"color":color+""});
+         });
+
+         $(".animate").css({"background":color+""});
+         $(".animates").css({"background":color+""});
+         $(".profile ul li a").mouseover(function(){
+           $(this).css({"color":""+color});
+         });
+         $(".profile ul li a").mouseout(function(){
+           $(".profile ul li a").css({"color":"#eee"});
+         });
+         $(".menu ul li a").mouseover(function(){
+           $(this).css({"color":""+color});
+         });
+         $(".menu ul li a").mouseout(function(){
+           $(this).css({"color":"#eee"});
+         });
+        }
+       var color = "#20c997";
+       $("#indigo").click(function(){
+         color = "#6610f2";
+         myColor(color);
+       });
+       $("#blue").click(function(){
+         color = "#007bff";
+         myColor(color);
+       });
+       $("#purple").click(function(){
+         color = "#6f42c1";
+         myColor(color);
+       });
+       $("#cyan").click(function(){
+         color = "#17a2b8";
+         myColor(color);
+       });
+       $("#red").click(function(){
+         color = "#dc3545";
+         myColor(color);
+       });
+       $("#pink").click(function(){
+         color = "#e83e8c";
+         myColor(color);
+       });
+       $("#green").click(function(){
+         color = "#28A745";
+         myColor(color);
+       });
+       $("#yellow").click(function(){
+         color = "#FFC107";
+         myColor(color);
+       });
+       $("#orange").click(function(){
+         color = "#FD7E14";
+         myColor(color);
+       });
+       $("#brown").click(function(){
+         color = "#795548";
+         myColor(color);
+       });
+
+
       });
+
+
     </script>
 
   </body>
