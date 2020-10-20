@@ -441,11 +441,20 @@ li.active a{
   to{width : 100%;}
 }
 
+
+
 .animates{
   /* width : 100%; */
   background :#20C997;
   height : 10px;
   border-radius: 5px;
+  animation-name: animates;
+  animation-duration: 5s;
+}
+
+@keyframes animates {
+  from{width : 0px;}
+  to{width : 100%;}
 }
 
 /* Spinner Wrapper */

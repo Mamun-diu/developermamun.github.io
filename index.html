@@ -473,7 +473,7 @@
 
           </div>
         </div>
-        <p class="font-italic  display-4"><strong class="countdown  font-weight-bold">1</strong>%</p>
+
     </div>
   </div>
   <div id="toTop" data-toggle="tooltip" data-placement="top" title="Back to Top">
@@ -554,23 +554,11 @@
 
 
 
-        // FOR DEMO PURPOSE
-        // $(window).on('load', function () {
-            var loadingCounter = setInterval(function () {
-                var count = parseInt($('.countdown').html());
-                if (count !== 100) {
-                    $('.countdown').html(count + 1);
-                    $('.animates').css({width : (count+1)+"%"});
 
-                } else {
-                    clearInterval();
-                }
-            }, 50);
+        // $('#reload').on('click', function (e) {
+        //     e.preventDefault();
+        //     location.reload();
         // });
-        $('#reload').on('click', function (e) {
-            e.preventDefault();
-            location.reload();
-        });
 
 
         // Scroll to top
