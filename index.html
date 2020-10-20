@@ -18,7 +18,7 @@
   <body>
     <div class="row no-gutters clearfix">
       <div class="col-lg-2 ">
-        <div class="d-md-none header">
+        <div class="d-lg-none header">
           <nav class="row no-gutters nav fixed-top">
             <div class="col-7  col-md-5">
               <h3 class="text-light top-name  mt-2 mt-sm-0">Developer <span class="display-block display-md-block">Mamun</span></h3>
@@ -39,31 +39,31 @@
               </div>
             </div>
             <div class="menu">
-              <ul>
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">About Me</a> </li>
-                <li> <a href="#">What I Do</a> </li>
-                <li> <a href="#">Resume</a> </li>
-                <li> <a href="#">Portfolio</a> </li>
-                <li> <a href="#">Testimonial</a> </li>
-                <li> <a href="#">Contact</a> </li>
+              <ul id="nav2">
+                <li class="active2"> <a href="#home">Home</a> </li>
+                <li> <a href="#about-me">About Me</a> </li>
+                <li> <a href="#what-i-do">What I Do</a> </li>
+                <li> <a href="#resume">Resume</a> </li>
+                <li> <a href="#portfolio">Portfolio</a> </li>
+                <li> <a href="#testimonial">Testimonial</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
               </ul>
             </div>
           </nav>
 
         </div>
-        <div class="container left-section profile d-none d-md-block pt-3">
+        <div class="container left-section profile d-none d-lg-block pt-3">
           <center>
             <img src="img/my.jpg" alt="">
             <h4>Developer Mamun</h4>
-            <ul>
-              <li> <a href="#">Home</a> </li>
-              <li> <a href="#">About Me</a> </li>
-              <li> <a href="#">What I Do</a> </li>
-              <li> <a href="#">Resume</a> </li>
-              <li> <a href="#">Portfolio</a> </li>
-              <li> <a href="#">Testimonial</a> </li>
-              <li> <a href="#">Contact</a> </li>
+            <ul id="nav">
+              <li class="active"> <a href="#home">Home</a> </li>
+              <li> <a href="#about-me">About Me</a> </li>
+              <li> <a href="#what-i-do">What I Do</a> </li>
+              <li> <a href="#resume">Resume</a> </li>
+              <li> <a href="#portfolio">Portfolio</a> </li>
+              <li> <a href="#testimonial">Testimonial</a> </li>
+              <li> <a href="#contact">Contact</a> </li>
             </ul>
             <ul class="list-inline mt-2 " >
               <li class="list-inline-item "> <a href="#"> <i class="fab fa-facebook-f fa-1x mr-2"></i> </a> </li>
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="col-lg-10 offset-lg-2">
-        <div class="welcome">
+        <div id="home" class="welcome">
           <div class="wrap">
             <h3>Welcome</h3>
             <h2 class="display-4"><span class="typed"></span> </h2>
@@ -83,7 +83,7 @@
             <a href="#">Hire Me</a>
           </div>
         </div>
-        <div class="about title">
+        <div id="about-me" class="about title">
           <h1>ABOUT ME</h1>
           <h2>Know Me More<span></span></h2>
 
@@ -118,25 +118,25 @@
           </div>
           <div class="row no-gutters experiance">
             <div class="col-sm-6 col-lg-3 experiance-child">
-              <h2>10+</h2>
+              <h2> <span class="counter">10</span>+</h2>
               <p>Years Experiance</p>
             </div>
             <div class="col-sm-6 col-lg-3 experiance-child">
-              <h2>250+</h2>
+              <h2><span class="counter">250</span>+</h2>
               <p>Happy Clients</p>
             </div>
             <div class="col-sm-6 col-lg-3 experiance-child">
-              <h2>650+</h2>
+              <h2><span class="counter">650</span>+</h2>
               <p>Projects Done</p>
             </div>
             <div class="col-sm-6 col-lg-3 experiance-child">
-              <h2>38</h2>
+              <h2><span class="counter">38</span></h2>
               <p>Get Awards</p>
             </div>
           </div>
         </div>
 
-        <div class="row no-gutters service ">
+        <div id="what-i-do" class="row no-gutters service ">
           <div class="col-12 title">
             <h1>SERVICE</h1>
             <h2>What I do<span></span></h2>
@@ -176,7 +176,7 @@
           </div>
         </div>
 
-        <div class="row no-gutters ">
+        <div id="resume" class="row no-gutters ">
           <div class="col-12 title">
             <h1>SUMMARY</h1>
             <h2>Resume<span></span></h2>
@@ -313,7 +313,7 @@
           </div>
         </div>
 
-        <div class="row  px-5 no-gutters service ">
+        <div id="portfolio" class="row  px-5 no-gutters service ">
           <div class="col-12 title">
             <h1>PORTFOLIO</h1>
             <h2>My Work<span></span></h2>
@@ -342,7 +342,7 @@
           </div>
         </div>
 
-        <div class="row no-gutters ">
+        <div id="testimonial" class="row no-gutters ">
           <div class="col-12 title">
             <h1>TESTMONIAL</h1>
             <h2>Client Speak<span></span></h2>
@@ -391,7 +391,7 @@
           </div>
         </div>
 
-        <div class="row no-gutters mt-5 contact ">
+        <div id="contact" class="row no-gutters mt-5 contact ">
           <div class="col-12 title">
             <h1>CONTACT</h1>
             <h2>Get in Touch<span></span></h2>
@@ -458,7 +458,15 @@
     <script src="js/slim.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/typed.js" charset="utf-8"></script>
+
     <script src="js/jquery.min.js"></script>
+    <script src="js/nav.js" charset="utf-8"></script>
+
+
+    <!-- Counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" charset="utf-8"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/main.js"></script>
     <script>
       //code for wow js
       new WOW().init();
@@ -470,12 +478,38 @@
       backSpeed: 30,
       loop: true
       });
+
+
     </script>
     <script type="text/javascript">
       $(document).ready(function(){
         $(".button").click(function(){
           $(".menu").slideToggle();
-        })
+        });
+
+        //one page nav
+        $('#nav').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing'
+        });
+        $('#nav2').onePageNav({
+        currentClass: 'active2',
+        changeHash: false,
+        scrollSpeed: 750,
+        scrollThreshold: 0.5,
+        filter: '',
+        easing: 'swing'
+        });
+
+        //counterup
+        $('.counter').counterUp({
+            delay: 20,
+            time: 2000
+        });
       });
     </script>
 
