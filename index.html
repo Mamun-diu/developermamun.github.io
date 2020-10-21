@@ -479,7 +479,7 @@
   <div id="toTop" data-toggle="tooltip" data-placement="top" title="Back to Top">
     <i class="fas fa-space-shuttle"></i>
   </div>
-  <div class="color d-none d-md-block">
+  <div class="color d-none d-lg-block">
     <i class="fas fa-cog"></i>
     <div class="color-box">
       <h4>Choose Color</h4>
@@ -642,10 +642,10 @@
          $(".buttons").css({"background":color+""});
          $("#nav li a").css({"color":"#eee"});
          $("#nav li.active a").css({"color":color+""});
-         // $(window).scroll(function(){
-         //   $("#nav li a").css({"color":"#eee"});
-         //   $("#nav li.active a").css({"color":color+""});
-         // });
+         $(window).scroll(function(){
+           $("#nav li a").css({"color":"#eee"});
+           $("#nav li.active a").css({"color":color+""});
+         });
 
 
 
