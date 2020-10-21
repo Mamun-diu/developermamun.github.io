@@ -80,7 +80,7 @@
             <h3 class="wow animate__animated  animate__bounceInDown">Welcome</h3>
             <h2 class="display-4"><span class="typed"></span> </h2>
             <p>based in Dhaka, Bangladesh</p>
-            <a class="wow animate__animated  animate__slideInUp" href="#">Hire Me</a>
+            <a class="wow animate__animated  animate__slideInUp" href="#contact">Hire Me</a>
           </div>
 
         </div>
@@ -423,18 +423,18 @@
             </div>
             <div class="col-12 col-md-8 mt-4 mt-md-1 mb-5 mb-lg-1">
               <h3>SEND US A NOTE</h3>
-              <form class="row no-gutters  wow animate__animated  animate__slideInUp" action="" method="post">
+              <div class="row no-gutters  wow animate__animated  animate__slideInUp">
                 <div class="form-group col-lg-6 ">
                   <input class="form-control name" type="text" name="subject" value="" placeholder="Name">
                 </div>
                 <div class="form-group col-lg-6  ">
-                  <input class="form-control mail" type="text" name="email" value="" placeholder="Email">
+                  <input class="form-control mail2" type="text" name="email" value="" placeholder="Email">
                 </div>
                 <div class="form-group col-lg-12">
                   <textarea class="form-control" name="message" rows="5" placeholder="Tell us more about your needs...."></textarea>
                 </div>
-                <input class="btn buttons col-lg-4 offset-lg-4 mt-3" type="submit" name="send-mail" value="Send Message">
-              </form>
+                <input id="send-mail" class="btn buttons col-lg-4 offset-lg-4 mt-3" type="submit" name="send-mail" value="Send Message">
+              </div>
             </div>
           </div>
         </div>
@@ -496,6 +496,17 @@
         <span id="brown"  data-toggle="tooltip" data-placement="top" title="Brown"></span>
       </div>
     </div>
+  </div>
+
+
+  <div class="mail">
+    <div class="mail-inner">
+      <h3>This feature will availabe soon...</h3>
+      <div class="cancel">
+        <span>X</span>
+      </div>
+    </div>
+
   </div>
 
 
@@ -646,9 +657,6 @@
            $("#nav li a").css({"color":"#eee"});
            $("#nav li.active a").css({"color":color+""});
          });
-
-
-
          $(".animate").css({"background":color+""});
          $(".animates").css({"background":color+""});
          $(".profile ul li a").mouseover(function(){
@@ -663,7 +671,16 @@
          $(".menu ul li a").mouseout(function(){
            $(this).css({"color":"#eee"});
          });
+         $(".mail-inner").css({"color":color+"","box-shadow": "0px 0px 10px 5px"+color});
+
+         $(".mail-inner .cancel span").css({"background":color+""});
+         $(".color-box h4").css({"color":color+""});
         }
+
+
+
+
+
        var color = "#20c997";
        $("#indigo").click(function(){
          color = "#6610f2";
@@ -704,6 +721,15 @@
        $("#brown").click(function(){
          color = "#795548";
          myColor(color);
+       });
+
+
+
+       $("#send-mail").click(function(){
+         $(".mail").show();
+       });
+       $(".mail-inner .cancel span").click(function(){
+         $(".mail").hide();
        });
 
 
