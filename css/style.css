@@ -110,6 +110,7 @@ body{
 }
 .welcome{
   background : url("../img/slider-img3.jpg");
+  background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   min-height: 500px;
@@ -759,14 +760,14 @@ a.fab:nth-child(4):hover{
 }
 .mail-inner{
   position: absolute;
-  left : 40%;
-  top : 30%;
+  left: 35%;
+  top: 30%;
   height: 200px;
-  width: 400px;
+  width: 30%;
   background: #fff;
-  color : #20C997;
-  padding : 30px;
-  font-size : 26px;
+  color: #20C997;
+  padding: 30px;
+  font-size: 26px;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px #20C997;
