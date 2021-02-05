@@ -291,7 +291,7 @@ body{
   font-weight:  600;
 }
 
-ul.project{
+/* ul.project{
 
 }
 ul.project li:hover{
@@ -305,7 +305,7 @@ ul.project li a{
 ul.project li a:hover{
   text-decoration: none;
   color : #20c997;
-}
+} */
 
 .client{
   background: #F8F9FA;
@@ -377,7 +377,7 @@ a.fab:nth-child(4):hover{
   font-size: 20px;
 }
 
-.design{
+/* .design{
   position: relative;
   transition : 0.5s ease;
   box-shadow: 0px 0px 5px black;
@@ -422,7 +422,7 @@ a.fab:nth-child(4):hover{
 }
 .design:hover:after{
   width: 0;
-}
+} */
 
 
 #nav li.active a{
@@ -789,6 +789,106 @@ a.fab:nth-child(4):hover{
   user-select: none;
 }
 
+div.filter{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+div.filter section{
+  /* padding : 20px;
+  width: 990px;
+  margin:40px; */
+}
+div.filter section ul{
+  display: flex;
+  margin-bottom: 10px;
+}
+div.filter section ul li{
+  list-style: none;
+  background : #eee;
+  padding : 8px 20px;
+  margin : 5px;
+  cursor: pointer;
+}
+div.filter section ul li.active{
+  background-color: #03a9f4;
+  color: #fff;
+}
+div.filter section .product{
+  display: flex;
+  flex-wrap: wrap;
+}
+div.filter section .product .itembox{
+  position: relative;
+  width: 220px;
+  /* height : 220px; */
+  margin : 5px;
+  overflow: hidden;
+
+}
+div.filter section .product .itembox img{
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width : 100%;
+  height : 170px;
+  object-fit : cover;
+}
+div.filter section .product .github{
+  position : absolute;
+  left : -50%;
+  top : 0px;
+  background : rgba(0,0,0,0.5);
+  height : 170px;
+  width : 50%;
+  transition: 0.5s ease;
+  border-right: 1px solid #ffffff;
+}
+div.filter section .product .github a{
+  margin-top : 75px;
+  margin-left: auto;
+  margin-right : 10px;
+  width : 80px;
+  display: block;
+
+}
+div.filter section .product .live{
+  position : absolute;
+  right : -50%;
+  top : 0px;
+  background : rgba(0,0,0,0.5);
+  height : 170px;
+  width : 50%;
+  transition: 0.5s ease;
+  border-left: 1px solid #ffffff;
+}
+div.filter section .product .live a{
+  margin-top : 75px;
+  margin-left : 10px;
+  width : 80px;
+  
+
+}
+
+div.filter section .product .itembox:hover .github{
+  left : 0%;
+}
+div.filter section .product .itembox:hover .live{
+  right : 0%;
+}
+.card-body{
+  padding : 10px !important;
+}
+.badges{
+  background-color: #0979f113;
+  color: #1e76d4;
+  border-radius: 10px;
+  font-size: 12px;
+  padding : 3px 6px;
+  margin-bottom : 5px;
+  display: inline-block;
+}
 
 @media (min-width:992px) {
   .experiance .experiance-child {
