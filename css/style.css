@@ -1019,3 +1019,14 @@ div.filter section .product .itembox:hover .live{
     font-size : 16px;
   }
 }
+@media (max-width:400px) {
+  .title h1{
+    font-size : 40px;
+  }
+  .title h2{
+    font-size : 14px;
+  }
+  h3{
+    font-size: 20px;
+  }
+}
