@@ -877,6 +877,9 @@ div.filter section .product .itembox:hover .github{
 div.filter section .product .itembox:hover .live{
   right : 0%;
 }
+.card{
+  min-height: 325px;
+}
 .card-body{
   padding : 10px !important;
 }
