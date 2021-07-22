@@ -8,6 +8,13 @@ body{
 
 }
 
+.alert{
+  position : absolute !important;
+  top : 10px;
+  right : 10px;
+  z-index : 1;
+}
+
 .profile{
   position: fixed;
   left: 0;
@@ -608,18 +615,18 @@ a.fab:nth-child(4):hover{
   width : 50px;
   height: 50px;
   border-radius: 50%;
-  transform: rotate(-90deg);
-  background: #1e2d65;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px 1px #ddd;
 
 
 
 }
 #toTop i{
   position: absolute;
-  left: 15px;
+  left: 17px;
   top: 15px;
   font-size: 20px;
-  color: white;
+  color: #777;
 }
 
 .color{
@@ -637,7 +644,16 @@ a.fab:nth-child(4):hover{
   font-size: 20px;
   margin-left: 10px;
   margin-top: 10px;
+  animation: anim 1s infinite;
 
+}
+@keyframes anim{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 .color-box{
   height: 180px;
